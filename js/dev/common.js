@@ -39,5 +39,6 @@ function uniqArray(array) {
 //#region src/js/app.js
 addTouchAttr();
 addLoadedAttr();
+isMobile();
 //#endregion
 export { isMobile as n, uniqArray as r, getDigFormat as t };

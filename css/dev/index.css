@@ -140,8 +140,6 @@ body {
 .page__section::after {
   position: absolute;
   top: 50%;
-  right: 0;
-  translate: 50% -50%;
 }
 .page__section::after {
   counter-increment: item;
@@ -1054,6 +1052,9 @@ body {
     margin-bottom: clamp( 1rem , -0.45rem  +  7.25vw , 8.25rem );
   }
 }@media (min-width: 47.99875em){
+  .page__section::after {
+    translate: 50% -50%;
+  }
   .main__container {
     align-items: center;
     padding-block: 1.25rem;
