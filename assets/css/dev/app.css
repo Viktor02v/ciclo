@@ -344,7 +344,6 @@ body {
 
 .projects-section08 {
   display: flex;
-  flex-wrap: wrap;
 }
 .projects-section08__item {
   text-align: center;
@@ -798,7 +797,7 @@ body {
     width: auto;
   }
   .projects-section08 {
-    justify-self: center;
+    justify-content: center;
   }
   .item-section09 {
     flex-direction: column;
