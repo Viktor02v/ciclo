@@ -133,6 +133,9 @@ body {
 .page {
   counter-reset: item;
 }
+.page__section {
+  position: relative;
+}
 .page__section::after {
   color: #e3e6ec;
   font-weight: 700;
@@ -140,8 +143,6 @@ body {
 .page__section::after {
   position: absolute;
   top: 50%;
-}
-.page__section::after {
   counter-increment: item;
   content: counter(item, decimal-leading-zero);
 }
@@ -683,7 +684,7 @@ body {
   .section11__container::after {
     content: "";
     position: absolute;
-    background: url("../assets/img/section11/01.webp") 30% 100%/cover no-repeat;
+    background: url("../assets/img/section11/01.jpg") 30% 100%/cover no-repeat;
     width: 50%;
     min-width: 50%;
     height: 100%;
@@ -849,9 +850,6 @@ body {
   .page__section::after {
     font-size: 1.5625rem;
   }
-  .page__section::after {
-    right: 0.46875rem;
-  }
   .main__body {
     padding-block: 3.125rem;
   }
@@ -928,6 +926,9 @@ body {
     margin-bottom: 1rem;
   }
 }@media (min-width: 47.99875em) and (width <= 20em){
+  .page__section::after {
+    right: 0.46875rem;
+  }
   .section03__picture {
     left: -0.9375rem;
   }
@@ -972,9 +973,6 @@ body {
   }
   .page__section::after {
     font-size: clamp( 1.5625rem , 1.125rem  +  2.1875vw , 3.75rem );
-  }
-  .page__section::after {
-    right: clamp( 0.46875rem , -0.9375rem  +  7.03125vw , 7.5rem );
   }
   .main__body {
     padding-block: clamp( 3.125rem , 1.8125rem  +  6.5625vw , 9.6875rem );
@@ -1143,6 +1141,9 @@ body {
     max-width: 55.625rem;
   }
 }@media (min-width: 47.99875em) and (width > 20em) and (width <= 120em){
+  .page__section::after {
+    right: clamp( 0.46875rem , -0.9375rem  +  7.03125vw , 7.5rem );
+  }
   .section03__picture {
     left: clamp( -15rem , 1.875rem  +  -14.0625vw , -0.9375rem );
   }
@@ -1153,6 +1154,9 @@ body {
     padding-left: clamp( 1.875rem , -0.75rem  +  13.125vw , 15rem );
   }
 }@media (min-width: 47.99875em) and (width > 120em){
+  .page__section::after {
+    right: 7.5rem;
+  }
   .section03__picture {
     left: -15rem;
   }
@@ -1243,9 +1247,6 @@ body {
   }
   .page__section::after {
     font-size: 3.75rem;
-  }
-  .page__section::after {
-    right: 7.5rem;
   }
   .main__body {
     padding-block: 9.6875rem;
