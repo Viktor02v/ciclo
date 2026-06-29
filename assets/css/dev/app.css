@@ -143,6 +143,7 @@ body {
 .page__section::after {
   position: absolute;
   top: 50%;
+  z-index: 2;
   counter-increment: item;
   content: counter(item, decimal-leading-zero);
 }
@@ -684,13 +685,13 @@ body {
   .section11__container::after {
     content: "";
     position: absolute;
-    background: url("../assets/img/section11/01.jpg") 30% 100%/cover no-repeat;
+    background: url("../img/section11/01.webp") 30% 100%/cover no-repeat;
     width: 50%;
     min-width: 50%;
     height: 100%;
     bottom: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
     object-fit: cover;
   }
   .section11__picture {
